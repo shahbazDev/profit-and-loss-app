@@ -1,3 +1,14 @@
+*{
+    margin: auto;
+   
+   
+}
+
+
+:root{
+    --primary-color:#65a30d;
+}
+
 body{
     text-align: center;
 }
@@ -5,4 +16,46 @@ label{
     display:block;
     padding-bottom: 1rem;
     padding-top: 2rem;
+    font-size: x-large
+    
+}
+h1{
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.input-label {
+    display: block;
+    font-size: larger;
+    margin: 2rem 0px;
+    font-weight: 600; 
+  }
+
+input{
+   display: block;
+   padding: 0.3rem;
+   border: 2px solid var(--primary-color); 
+   border-radius: 0.5rem;
+   width: 100%;
+   max-width: 325px
+}
+button{
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+background-color:  #65a30d;
+border-radius: 0.5rem;
+color: blanchedalmond;
+font-size: large;
+}
+#output-Box{
+    padding-top: 1.5rem;
+    font-size: x-large;
+    background-color:greenyellow;
+    margin-top: 1rem;
+}
+
+
+footer{
+    font-size: large;
+    padding-top: 1rem;
 }

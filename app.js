@@ -6,16 +6,30 @@ var outputBox = document.querySelector("#output-Box");
 
 function calcProfitAndLoss(initial,quantity,current){
     if(initial>current){
-    var loss = initial-current;
+    var loss = (initial-current)*quantity;
     var lossPercentage = (loss/initial)*100;
-    showOutput("The loss is ")
+    showOutput(`The loss is ${loss} and the percent is -${lossPercentage}%`);
     }
-    elseif(initial<current){
-        var profit = current-initial;
-        var lprofitPercentage = (profit/initial)*100;
-    showOutput("")
+    else if(initial<current){
+        var profit = (current-initial)*quantity;
+        var profitPercentage = (profit/initial)*100;
+    showOutput(`The profit is ${profit} and the percent is  ${profitPercentage}%`);
     }
     else{
-        showOutput("")
+        showOutput("No profit No loss boss")
     }
 }
+function showOutput(message){
+    outputBox.innerText=message;
+}
+
+
+function clickHandler(){
+    var ip=Number(initialPrice.value);
+    var qty = Number(quantityOfStocks.value);
+    var curr = Number(currentPrice.value);
+    calcProfitAndLoss(ip,qty,curr)
+}
+
+
+button.addEventListener("click",clickHandler);
