@@ -15,7 +15,7 @@ body{
 label{
     display:block;
     padding-bottom: 1rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     font-size: x-large
     
 }
@@ -50,12 +50,17 @@ font-size: large;
 #output-Box{
     padding-top: 1.5rem;
     font-size: x-large;
-    background-color:greenyellow;
     margin-top: 1rem;
 }
 
 
 footer{
     font-size: large;
-    padding-top: 1rem;
+    bottom:0;
+    position: absolute;
+    text-align: center;
+    left:0;
+    right:0;
+    background-color: var(--primary-color);
+    padding: 1.5rem;
 }
